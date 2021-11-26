@@ -1,0 +1,247 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("media/crud_formateurs_wp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat center center;
+    background-attachment: fixed;   
+}
+header {
+    background-color: rgba(255, 255, 255, 0.500);
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: rgba(101, 211, 255, 0.500);
+    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.500);
+    font-size: 65px;
+    font-weight: bold;
+}
+.CONNECTED-AS {
+    background-color: rgba(255, 255, 255, 0.500);
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.CONNECTED-AS span {
+    color: rgba(75, 75, 75, 0.600);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.CONNECTED-AS form {
+    display: flex;
+    justify-content: center;
+}
+#btnDeco,
+#btnDeco::after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#btnDeco {
+    background-color: white;
+    border: 1.5px solid rgba(75, 75, 75, 0.600);
+    border-radius: 4px;
+    color: rgba(75, 75, 75, 0.600);
+    margin: 10px auto;
+}
+#btnDeco:hover {
+    background-color: rgba(101, 211, 255, 0.700);
+    color: rgba(182, 0, 112, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.CHOICES {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: left;
+    display: flex;
+}
+
+#btn {
+    background: none;
+    width: 250px;
+    height: 60px;
+    border: 4px solid rgba(35, 199, 228, 0.781);
+    box-shadow: 4px 5px 4px rgb(0, 0, 0, 0.500);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(35, 199, 228, 0.781);
+    transition: .3s linear;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.500);
+
+}
+#btn:hover {
+    color: rgba(224, 4, 140, 0.747);
+    border: 4px solid rgba(224, 4, 140, 0.747);
+
+}
+#btn:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: -1;
+    transition: .3s linear;
+}
+#btn:hover:before {
+    width: 245px;
+}
+
+.rechercheParNom {
+    display: flex;
+    justify-content: center;
+}
+
+#BtnRecherche,
+#BtnRecherche::after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#BtnRecherche {
+    background-color: white;
+    border: 1.5px solid rgba(75, 75, 75, 0.600);
+    border-radius: 4px;
+    color: rgba(75, 75, 75, 0.6);
+    margin: 10px auto;
+}
+#BtnRecherche:hover {
+    background-color: rgba(101, 211, 255, 0.700);
+    color: rgba(182, 0, 112, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+}
+table {
+    margin: auto;
+    border: 2px solid rgba(35, 199, 228, 0.781);  
+    color: rgba(83, 83, 83, 0.800);
+}
+td, th {
+    text-align: left;
+    border: 1px solid rgba(35, 199, 228, 0.781);
+}
+#affichage {
+        border: 4px solid rgba(35, 199, 228, 0.781);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+        overflow: scroll;
+        height: 520px;
+}
+#LabelAjouterFormateur {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+#btnAjouter,
+#btnAjouter::after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#btnAjouter {
+    background-color: white;
+    border: 1.5px solid rgba(75, 75, 75, 0.600);
+    border-radius: 4px;
+    color: rgba(75, 75, 75, 0.600);
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+#btnAjouter:hover {
+    background-color: rgba(101, 211, 255, 0.700);
+    color: rgba(182, 0, 112, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+}
+.deleteFormaMsg {
+    background-color: rgba(255, 255, 255, 0.500);
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    color: rgba(83, 83, 83, 0.800);
+    font-size: x-large;
+}
+.ERR {
+    background-color: rgba(255, 255, 255, 0.500);
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(83, 83, 83, 0.800);
+}
+.FORM {
+    display: flex;
+    justify-content: center;
+}
+.LOGIN-FORM {
+    background-color: rgba(255, 255, 255, 0.580);
+    border-radius: 3%;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.500) ;
+    display: flex;
+    width: 450px;
+    height: 485px;
+    justify-content: center;
+}
+#formAjoutFormateur {
+    margin-top: 15px;
+}
+.inputText, .inputLabel, .btnSubmit {
+    display: flex;
+    justify-content: center;
+} 
+.inputText {
+    width: 100%;
+    border: solid 1.5px rgba(75, 75, 75, 0.600);
+    border-radius: 2px;
+    margin-top: 5px;
+}
+label {
+    color: rgba(75, 75, 75, 0.600);
+    font-size: 15px;
+    font-weight: bold;
+}
+.btnSubmit,
+.btnSubmit::after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btnSubmit {
+    background-color: white;
+    border: 1.5px solid rgba(75, 75, 75, 0.600);
+    border-radius: 4px;
+    color: rgba(75, 75, 75, 0.600);
+    margin: 10px auto;
+}
+.btnSubmit:hover {
+    background-color: rgba(101, 211, 255, 0.700);
+    color: #ff7cc4;
+    font-weight: bold;
+    font-size: 15px;
+}
+#titreForm {
+    text-align: center;
+    color: rgba(75, 75, 75, 0.600);
+    font-weight: bold;
+    font-size: x-large;
+}
